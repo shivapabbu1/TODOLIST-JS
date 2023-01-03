@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+    
+    <link rel="stylesheet" href="./style.css">
+    
+    
+</head>
+<body>
+   <div id="main">
+    <nav>
+        <h1 style="font-size: 42px;">Tasks <span style="color:#00A5EC ;">List</span></h1>
+    </nav>
+    <div id="add_new"> <span class="material-symbols-rounded" style="color: #00A5EC; font-size: 50px;" id="add_btn" class="sc">
+     <i class="fa fa-plus-square index_plus" id="index" aria-hidden="true"></i>
+    </span>
+    <span id="add_new_text" style="font-size: 22px;">Add New Task</span>
+    </div>
+    <h2 id="noTask" style="margin-left: 10%;">No Task List Created Yet</h2>
+    <div id="con_box">
+        <div id="container">
+        </div>
+    </div>
+</div>
+<div id="overlay">
+    <div id="pop_box">
+        <div id="p_top">
+            <span id="new_task" style="font-size:20px;display:inline-block;margin: 1rem 1rem 1rem 1rem; " class="sc">
+                Add New Task
+            </span>
+            <span id="close" class="material-symbols-outlined" >
+            close
+            </span>
+        </div>
+        <div id="p_mid">
+            <input id="p_mid_input" type="text" >
+        </div>
+        <div id="p_bottom">
+            <input id="add_new_task" type="submit" value="+ Add Task" class="sc">
+        </div>
+    </div>
+</div>
+<div id="overlay2">
+    <div id="pop_box2">
+        <div id="p_top">
+            <span id="new_task" style="font-size:20px;display:inline-block;margin: 1rem 1rem 1rem 1rem; " class="sc">
+                Add New Item
+            </span>
+            <span id="close2" class="material-symbols-outlined" >
+            close
+            </span>
+        </div>
+        <div id="p_mid">
+            <input id="p2_mid_input" type="text" >
+        </div>
+        <div id="p_bottom">
+            <input id="add_new_item" type="submit" value="+ Add Item" class="sc">
+        </div>
+    </div>
+</div>
+
+      
+<script src="./todo.js"></script>
+</body>
+</html>
